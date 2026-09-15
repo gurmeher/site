@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* one link color everywhere — visited links don't turn purple */
+a, a:visited {
+  color: #0e3f7c;
+}
+
+/* content column sits on the left, like collison's site */
+#content {
+  max-width: 620px;
+  margin: 70px 0 40px 150px;
+  padding: 0 20px;
+}
+
+/* square profile photo at the top of the text */
+.profile {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  background: #ddd; /* placeholder gray — invisible once a real image loads */
+  margin-bottom: 0;
+}
+
+/* tighter spacing between text blocks */
+#content p, #content ul {
+  margin: 0.6em 0;
+}
+
+/* bookshelf page gets a slightly wider column */
+#content.wide {
+  max-width: 635px;
+}
+
+/* bookshelf: rows of covers, left-aligned, same height, width free */
+.covers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px 22px; /* row-gap column-gap */
+  margin: 2em 0;
+}
+
+.covers img {
+  height: 215px;
+  width: auto;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* menu pinned to the right edge, right-aligned */
+#menu {
+  position: fixed;
+  top: 70px;
+  right: 80px;
+  text-align: right;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* phones: menu on top, content column flush left */
+@media (max-width: 760px) {
+  #menu {
+    position: static;
+    text-align: left;
+    padding: 20px 20px 0;
+  }
+
+  #menu li {
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  #content {
+    margin-left: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* horizontal image strip — drag / swipe / shift-scroll to move it */
+.strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin: 2em 0;
+  padding-bottom: 8px; /* room for the scrollbar */
+  scroll-snap-type: x proximity;
+}
+
+.strip img,
+.strip .tile {
+  height: 150px;
+  width: auto;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* placeholder — delete once real images are in */
+.tile {
+  width: 220px;
+  background: #ddd;
+}
