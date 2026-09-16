@@ -19,16 +19,27 @@ a, a:visited {
 
 /* square profile photo at the top of the text */
 .profile {
-  width: 130px;
-  height: 130px;
+  width: 143px;
+  height: 143px;
   object-fit: cover;
   background: #ddd; /* placeholder gray — invisible once a real image loads */
   margin-bottom: 0;
 }
 
+/* small section headers */
+#content h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0.6em 0;
+}
+
 /* tighter spacing between text blocks */
 #content p, #content ul {
   margin: 0.6em 0;
+}
+
+#content li {
+  margin-bottom: 0.5em;
 }
 
 /* bookshelf page gets a slightly wider column */
