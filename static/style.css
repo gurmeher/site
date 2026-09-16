@@ -26,6 +26,11 @@ a, a:visited {
   margin-bottom: 0;
 }
 
+#menu .profile {
+  display: block;
+  margin: 0 0 8px auto; /* block on its own line, pushed to the right edge */
+}
+
 /* small section headers */
 #content h2 {
   font-size: 16px;
@@ -110,14 +115,13 @@ img {
 
 .strip img,
 .strip .tile {
-  height: 150px;
+  height: 325px;
   width: auto;
   flex-shrink: 0;
   scroll-snap-align: start;
 }
-
 /* placeholder — delete once real images are in */
-.tile {
+.strip .tile {
   width: 220px;
   background: #ddd;
 }
