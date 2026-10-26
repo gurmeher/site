@@ -10,7 +10,7 @@ a, a:visited {
   color: #0e3f7c;
 }
 
-/* content column sits on the left, like collison's site */
+/* content column sits on the left */
 #content {
   max-width: 620px;
   margin: 70px 0 40px 150px;
