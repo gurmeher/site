@@ -10,10 +10,10 @@ a, a:visited {
   color: #0e3f7c;
 }
 
-/* content column sits on the left */
+/* content column sits to the right of the menu */
 #content {
   max-width: 620px;
-  margin: 70px 0 40px 150px;
+  margin: 70px 0 40px 240px;
   padding: 0 20px;
 }
 
@@ -66,11 +66,12 @@ a, a:visited {
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* menu pinned to the right edge, right-aligned */
+/* menu pinned to the left of the content, right-aligned against it */
 #menu {
   position: fixed;
   top: 70px;
-  right: 80px;
+  left: 60px;
+  width: 143px;
   text-align: right;
 }
 
