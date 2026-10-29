@@ -13,7 +13,7 @@ a, a:visited {
 /* content column sits to the right of the menu */
 #content {
   max-width: 620px;
-  margin: 70px 0 40px 240px;
+  margin: 70px 0 40px 243px; /* 60 left gap + 143 menu + 60 gap - 20 padding */
   padding: 0 20px;
 }
 
