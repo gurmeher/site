@@ -99,6 +99,21 @@ a, a:visited {
   }
 }
 
+/* big screens: slightly larger text and wider gaps */
+@media (min-width: 1600px) {
+  body {
+    font-size: 17px;
+  }
+
+  #menu {
+    left: 100px;
+  }
+
+  #content {
+    margin-left: 323px; /* 100 left gap + 143 menu + 100 gap - 20 padding */
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
